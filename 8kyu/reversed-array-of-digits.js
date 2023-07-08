@@ -11,17 +11,7 @@ function digitize(n) {
     //code here
   }
 
-
-//My 1 Solution
-function digitize(n) {
-    n = [n]
-    return n.reverse()
-  }
-
-  console.log(digitize(321), [1,2,3])
-
-
-  //2 Solution
+  //My Solution
   function digitize(n) {
     let numArray = n.toString().split('').reverse()
     return numArray.map(e => parseInt(e))
