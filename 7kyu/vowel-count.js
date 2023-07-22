@@ -14,6 +14,7 @@ function getCount(str) {
     let vowels = str.split('').filter(vowel => vowel === 'a' || vowel === 'e' || vowel === 'i' || vowel === 'o' || vowel === 'u')
     return vowels.length
   }
+
   console.log(getCount("abracadabra"), 5)
 
   
@@ -37,3 +38,8 @@ function getCount(str) {
     return vowelsCount;
   }
 
+
+  //codewars
+  function getCount(str) {
+    return str.split('').filter(c => "aeiouAEIOU".includes(c)).length;
+   }
