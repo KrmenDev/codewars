@@ -24,6 +24,7 @@
 // return true
 //else false
 
+
 function validatePIN (pin) {
     if(pin.length === 4 || pin.length === 6){
         //every tests whether all elements in the array pass the test implemented by the provided function 
@@ -32,7 +33,6 @@ function validatePIN (pin) {
         return false
     }
   }
-
 
 
   //CodeWars
