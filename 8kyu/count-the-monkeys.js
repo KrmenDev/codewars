@@ -25,5 +25,23 @@ console.log(monkeyCount(5),[1, 2, 3, 4, 5])
 
 
 
+//CodeWars
+function monkeyCount(n) {
+    var monkeys = [];
+    for(var i=1; i<n+1; i++){
+      monkeys.push(i);
+    }
+    return monkeys;
+   }
+
+
+
+
+//CodeWars
+function monkeyCount(n) {
+    for (var i = 0, arr = []; i < n; arr.push(++i));
+    return arr;
+  }
+
 
 
