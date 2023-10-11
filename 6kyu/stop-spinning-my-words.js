@@ -54,7 +54,6 @@ function spinWords(string){
 
 
 
-  
 
 //CodeWars
 function spinWords(str){
