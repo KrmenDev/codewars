@@ -37,18 +37,6 @@ function shortcut (string) {
 
   console.log(shortcut("hello"), "hll")
 
-//   //function shortcut (string) {
-//   let res = ''
-  
-//   for (let i = 0; i < string.length; i++){
-//     if (string[i] === 'a' || string[i] === 'e' || string[i] === 'i' || string[i] === 'o' || string[i] === 'u'){
-//       continue    
-//     } 
-//     res += string[i]
-//   }
-  
-//   return res;
-// }
 
 
 function shortcut (string) {
