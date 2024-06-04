@@ -31,7 +31,6 @@ function alphabetPosition(text) {
 
 
 
-
 //codewars
 function alphabetPosition(text) {
     let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
@@ -53,6 +52,3 @@ let alphabetPosition = (text) => text.toUpperCase().replace(/[^A-Z]/g, '').split
 
 //-64 = beacuse we use .UpperCase(), if ch = 'A' after charCodeAt(0), ch = 65 , -64 we got 1, if 'b' we got 2 (the value we need), if you use .toLowerCase() 'a' = 97 then -96
 
-
-
-//
