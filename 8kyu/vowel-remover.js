@@ -12,8 +12,6 @@
 //P: use a loop to check each letter in string if is a vowel remove it from string return string
 
 
-//I'm trying to solve a codewars challenge we are supposed to remove vowels from a string, I want to understand what is wrong with this two options to solve it, I'm a using != and || wrong?
-
 function shortcut (string) {
     let noVowels = ''
     for(let i = 0; i < string.length; i ++){
@@ -42,7 +40,6 @@ function shortcut (string) {
 function shortcut (string) {
     return string.split('').filter((e) => e != 'a' || e != 'e' || e != 'i' || e != 'o' || e != 'u').join('')
   }
-
 
 
 
