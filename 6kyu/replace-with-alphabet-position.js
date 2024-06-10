@@ -9,10 +9,10 @@
 // Output = "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11"
 
 
-//P: string uppercase and lowecase, can have numbers or symnols
+//P: string uppercase and lowecase, can have numbers or symbols
 //R: string of numbers of alphabet position
 //E: "midnight" => "13 9 4 14 9 7 8 20"
-//P: make string lowercase and remove everything that isn't a letter, check if the str includes the letter and retur its index
+//P: make string lowercase and remove everything that isn't a letter, check if the str includes the letter and return its index
 
 
 function alphabetPosition(text) {
