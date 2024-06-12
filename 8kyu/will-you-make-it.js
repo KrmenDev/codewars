@@ -5,23 +5,21 @@
 
 // Function should return true if it is possible and false if not.
 
-const zeroFuelA = (distanceToPump, mpg, fuelLeft) => {
-    
-  };
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  // TODO
+};
 
-  //My Solution
+
   //P: distance to pump, miles per gallon to get there, fuel left
   //R: Should return a boolean / true if we make it or false if we dont
+  //E: (50, 25, 2) => true
+  //E: (100, 50, 1) => false
+  //P: multiply fuel left by mpg and if the result is bigger or equal to distance to pump return true
 
- const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
-    //conditionals if the mpg * fuel left is greater than distance we make it
-
-    return mpg * fuelLeft >= distanceToPump ? true : false
+  const zeroFuelA = (distanceToPump, mpg, fuelLeft) => {
+      return fuelLeft * mpg >= distanceToPump ? true : false
   };
 
-  //E:
-  console.log(zeroFuel(50,25,2),true)
-  console.log(zeroFuel(100,50,1),false)
 
   //codeWars Best
   const zeroFuelB = (distanceToPump, mpg, fuelLeft) => {
