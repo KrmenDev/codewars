@@ -3,7 +3,7 @@
 // In this kata you need to check the provided array (x) for good ideas 'good' and bad ideas 'bad'. If there are one or two good ideas, return 'Publish!', if there are more than 2 return 'I smell a series!'. If there are no good ideas, as is often the case, return 'Fail!'.
 
 
-//My saolution
+//My solution
 
 //P:Array, strings, never empty, never integers
 //R: A string either 'fail', 'publish', 'I smell a series!'
@@ -11,9 +11,9 @@
 //E: ['good', 'bad', 'bad', 'bad', 'bad'] => 'Publish!
 //E: ['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good'] => 'I smell a series!')
 //P: check each elem in array
-// if 1 or 2 return 'Publish!'
-// else if more than 2 return 'I smell a series!
-// if 0 ideas return 'Fail!'
+// if 1 or 2 good return 'Publish!'
+// else if more than 2 good return 'I smell a series!
+// if 0 good return 'Fail!'
 
 
 function well(x){
@@ -25,6 +25,12 @@ function well(x){
         }else if(count.length  > 2){
             return 'I smell a series!'
         }
+}
+
+
+function well(x){
+  let score = x.map((e) => e === 'good' ?  1 :  0).reduce((a,b)=>a+b, 0)
+  return score > 2 ? 'I smell a series!' : score >= 1 ?  'Publish!' : 'Fail!'
 }
 
 
