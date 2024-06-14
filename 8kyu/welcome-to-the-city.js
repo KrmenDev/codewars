@@ -10,7 +10,14 @@ function sayHello( name, city, state ) {
 
 //P: 3 strings, always a string, never empty, the length will vary, name is an array
 //R: return concat string with one space between each
-//E: ['John', 'Smith'], 'Phoenix', 'Arizona' = Hello, John Smith! Welcome to Phoenix, Arizona!
+//E: ['Franklin','Delano','Roosevelt'], 'Chicago', 'Illinois') => 'Hello, Franklin Delano Roosevelt! Welcome to Chicago, Illinois!'
+//P: pass array to string then concat name with city and state
+
+
+function sayHello( name, city, state ) {
+    return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
+}
+
 
 
 //my Solution
