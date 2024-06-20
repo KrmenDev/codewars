@@ -12,11 +12,21 @@
 //P: num of days, always a num, positive num, never empty, whole num
 //40 = 1 day, 7 days get -50, 3 days = -20
 //R: return total depending of the days
-//E:
-// 1 day = 40
-// 2 = 80
-// 4 = 140
-// 6 = 220
+// if 1 day or 2 days => * 40
+// if > 2 => -20
+// if > 6 => -50 
+
+//E: 6 => 220 (6 * 40 - 20) 
+//E: 7 => 230 (7 * 40 - 50)
+//E: 3 => 100 (3 * 40 -20)
+//P:multiply d * 40 if d >= 3 -20 if else >=7 -50 
+
+function rentalCarCost(d) {
+  return d >=7 ? (d * 40) - 50 : d >= 3 ? (d * 40) - 20 : d * 40
+}
+
+
+
 function rentalCarCost(d) {
     //conditional
     //multiply d x 40
