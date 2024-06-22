@@ -17,9 +17,22 @@
 // Notes:
 // our team always plays 10 matches in the championship
 
+
+
+//P: array of string numbers, always 10 elements x:y format where x is our teams score if x > y => 3, if x < y = 0, else x = y => 1 
+//R: Total of points of x (integer)
+//E: (["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"]) => 30
+//E: (["0:1","0:2","0:3","0:4","1:2","1:3","1:4","2:3","2:4","3:4"]) => 0
+//P: compare if x > y add 3 to a total if equal add 1 else 0
+// return total 
+
 function points(games) {
-    return 0
-  }
+  let total = 0
+  games.map((game) => game[0] == game[2] ? total += 1 : game[0] > game[2] ? total += 3 : total += 0 )
+  return total 
+}
+
+
 
 
 //CodeWars Best Practice
@@ -58,3 +71,7 @@ function points(games) {
     return totalPoints;
   }
 
+
+//Codewars
+                                  //Destructuring assignment
+const points = g => g.reduce((a, [x, _, y]) => a + (x > y ? 3 : x == y), 0)
