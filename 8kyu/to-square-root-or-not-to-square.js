@@ -22,6 +22,10 @@
 // [ 100, 101, 5, 5, 1, 1 ] => [ 10, 10201, 25, 25, 1, 1 ]
 //P: if the element squared is whole return the square else multiply num * num
 
+function squareOrSquareRoot(array) {
+  return array.map((e) => Math.sqrt(e) % 1 == 0 ? Math.sqrt(e) : e * e)  
+}
+
 
 function squareOrSquareRoot(array) {
     return array.map((e)=> {
