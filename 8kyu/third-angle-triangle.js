@@ -14,7 +14,13 @@
 //   (60, 60) = 60
 //   (43, 78) = 59
 //   (10, 20) = 150
+//the sum of the 3 should be 180
+//P: 180 - (a + b)
 
+
+function otherAngle(a, b) {
+  return 180 - (a+b);
+}
 
 function otherAngle(a, b) {
   //the sum of the 3 should be 180
