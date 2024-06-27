@@ -22,6 +22,13 @@
 //{} => {}
 // {3} => {}
 // {-6, 20, -1, 10, -12 } => 3
+//P: remove smallest and highest value add the rest and return the total if the array is null or 1 element return 0
+
+function sumArray(array) {
+   return array == null || array.length <=1 ? 0 : array.sort((a,b) => a - b).slice(1, -1).reduce((acc, c) => acc + c, 0)
+}
+
+
 
 function sumArray(array) {
     //if empty or less than 3 return 0
