@@ -14,12 +14,19 @@
 
 //P: Array, whole nums, positive, emty or jus one num
 //R: Sum of the diferences between pairs
-//E: [2, 1, 10]  -->  9
+//E: [2, 1, 10] --> [10,2,1] --> (10-2 (8)) + (2-1 (1)) => 9
 //E: [-3, -2, -1] --> 2
 //P: reverse array
-//P: group pairs and substract
-//P: store answers and sum them 
+//P: group pairs (use the index?) and substract
+//P: store answers and sum then
 //P: Return Sum
+
+
+function sumOfDifferences(arr) {
+    return arr.sort((a,b) => b - a).map((e, i) => e - arr[i+1] || 0).reduce((a,b) => a + b, 0)
+}
+
+
 
 function sumOfDifferences(arr) {
     let sum = 0
