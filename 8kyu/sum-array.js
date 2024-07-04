@@ -20,10 +20,15 @@
 // Advanced users may find this extremely easy and can easily write this in one line.
 
 // Sum Numbers
+
+//P: array of numbers, positive, negative whole or floats
+//R: the sum of all numbers if empty return 0
+//E: [] => 0
+//E: [1, 5.2, 4, 0, -1] => 9.2
+//P: use reduce to sum all
+
 function sum (numbers) {
-    "use strict";
-    
-    
+    return numbers.reduce((acc,c) => acc + c, 0)
 };
 
 //My Solution
