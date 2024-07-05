@@ -14,13 +14,16 @@
 //R: string with 1 and 0
 //E: 4 => '1010'
 //   6 => '101010'
-//P: repeat 1 and 0 x(size) number of times
+//P: create and fill array with number of size, then if even index a 0 and odd a 1
  
+function stringy(size) {
+    return Array(size).fill('0').map((e,i) => i % 2 === 0 ? e = '1': e = '0').join('');
+}
+
 
 function stringy(size) {
     return Array(size).fill(1).map((e, i) => e = i % 2 ? 0 : 1).join('');
   }
-
 
 
 
