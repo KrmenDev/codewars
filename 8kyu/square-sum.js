@@ -3,7 +3,18 @@
 
 // For example, for [1, 2, 2] it should return 9 
 
-//My Solution
+//P: integers whole, positive, can be empty
+//R: single number of squared numbers sum
+//E: [1,2] => 5
+//[0, 3, 4, 5] => 50
+//[] => 0
+//P: square each num then reduce to return sum
+
+function squareSum(numbers){
+  return numbers.map((num) => num * num).reduce((acc,c)=> acc + c, 0)
+}
+
+
 function squareSum(numbers) {  
     let total = 0;
     for (let i = 0; i < numbers.length; i++) {
