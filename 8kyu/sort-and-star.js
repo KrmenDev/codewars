@@ -15,6 +15,11 @@
 //separate word and replace spaces with *** between letters
 
 function twoSort(s) {
+  return s.sort().slice(0, 1).toString().split('').join('***');
+}
+  
+
+function twoSort(s) {
     return s.sort().slice(0,1).toString().split('').toString('').replaceAll(',','***')
 }
 
