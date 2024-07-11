@@ -7,8 +7,14 @@
 // n= 5, m=5: 25
 // n=-5, m=5:  0
 
+//P: n = classmates, m = pages numbers, whole, positive, negative, can be empty
+//R: number of multiplication of n * m
+//E:-5,-5 => 0
+//E:5, -5 => 0
+//E: 5, 5 => 25
+//P:if n or m less than 0 return 0 else multiply n * m
 function paperwork(n, m) {
-  
+  return n < 0 || m < 0 ? 0 : n * m
 }
 
 
