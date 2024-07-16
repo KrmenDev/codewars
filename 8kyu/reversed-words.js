@@ -7,14 +7,16 @@
 
 // "The greatest victory is that which requires no battle" --> "battle no requires which that is victory greatest The"
 
+
+//P: string, never empty, lowercase maybe uppercase
+//R: string with words reverse order
+//E: "hello world!" => "world! hello"
+//E: "yoda doesn't speak like this" => "this like speak doesn't yoda"
+//P: split string into array then reverse string order and join to return string 
+
+
 function reverseWords(str){
-    return str; // reverse those words
-  }
-
-
-  //My Solution
-  function reverseWords(str){
-    return str.split(' ').reverse().join(' ');
+    return str.split(' ').reverse().join('')
   }
 
 
