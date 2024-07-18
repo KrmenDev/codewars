@@ -1,16 +1,20 @@
 // DESCRIPTION:
-// Build a function that returns an array of integers from n to 1 where n>0.
+// Build a function that returns an array of integers from n to 1 where n > 0.
 
-// Example : n=5 --> [5,4,3,2,1]
-const reverseSeqE = n => {
-    return [];
+
+//P:number, always positive and always more than 0
+//R: Array with numbers from n to 1
+//E: n=5 --> [5,4,3,2,1]
+//E: 3 => [3,2,1]
+//P: fill array with n numbers then change number to index + 1 then reverse order
+
+
+const reverseSeq = n => {
+    return Array.from({length: n}).fill(0).map((e,i)=> e + (i+1)).reverse();
   };
 
 
-  //My Solution
-  //P: only one num, whole number, positive, always num, never 0
-  //R: Array, sequence num, whole num, integers reverse order
-  const reverseSeq = n => {
+  const reverseSeqA = n => {
     //store num in new array
     let numToArray = []
     //loop down the num to 1 
@@ -21,15 +25,10 @@ const reverseSeqE = n => {
     return numToArray
   };
 
-  //E:
-  console.log(reverseSeq(3), [3,2,1])
-  console.log(reverseSeq(10), [10,9,8,7,6,5,4,3,2,1])
-  console.log(reverseSeq(5), [5,4,3,2,1])
-
 
 //CodeWars Best practice
 
-const reverseSeqA = n => {
+const reverseSeqB = n => {
 let arr = [];
   for (let i=n; i>0; i--) {
     arr.push(i);
@@ -38,7 +37,7 @@ let arr = [];
 
 
 //CodeWars
-const reverseSeqB = n => {
+const reverseSeqC = n => {
     return Array(n).fill(0).map((e, i) => n - i );
   };
 //   Array(n) creates an array with n number of empty spots. Ex: Array(5): [ undefined, undefined, undefined, undefined, undefined ].
