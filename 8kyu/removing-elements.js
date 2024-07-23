@@ -16,14 +16,17 @@
 //P: filter elements if they are even (%) return array with only odd index
 
 function removeEveryOther(arr){
+  return arr.filter((e,i) => i % 2 === 0 )
+}
+
+
+function removeEveryOther(arr){
     return arr.filter(function(e, i){
         if(i % 2 === 0){
             return e
         }
     })
 }
-
-
 
 
 //CodeWars
