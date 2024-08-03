@@ -16,12 +16,16 @@
 //R: String with commas after each element
 //E: [2,4,5,2] => "2,4,5,2"
 //E: [hola] =>  "h,o,l,a"
-//P: array to string then split and join
+//P: array join with ,
+
+function printArray(array){
+  return array.join('')
+}
+
 
 function printArray(array){
    return array.toString().split(',').join()
   }
-
 
 
 
