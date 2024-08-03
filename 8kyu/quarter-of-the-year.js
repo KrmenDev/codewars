@@ -9,10 +9,18 @@
 
 //P: Interger, whole, from 1 to 12, always positive, always a num, never empty
 //R: Return wich quarter as a num, only 1 to 4, only num
+//E: 3 => 1
+//E: 8 => 3
+//E: 4 => 2
+//E: 11 => 4
+//use a conditional to see if month 1-3 = 1 then 4-6 = 2 then 7-9 = 3 and 10-12 = 4
+const quarterOf = (month) => {
+  return month <= 3 ? 1 : month <= 6 ? 2 : month <= 9 ? 3 : 4
+}
 
 
 //My Code
-const quarterOf = (month) => {
+const quarterOfM = (month) => {
     //conditional if the month is less than x return quarter
     if(month <= 3){
         return 1
@@ -24,18 +32,6 @@ const quarterOf = (month) => {
         return 4
     }
   }
-
-console.log(quarterOf(3),1)
-console.log(quarterOf(8),3)
-console.log(quarterOf(11),4)
-
-
-  //E: 
-  // 1 <= month <= 12
-  /// 1-3 = month = 1
-  //// 4-6 = month = 2
-  //// 7-9 = month = 3
-  //// 10-12 = month = 4
 
 
   //CodeWars Best
