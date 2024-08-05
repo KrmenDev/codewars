@@ -8,6 +8,17 @@
 // otherwise	'Hello guest'
 
 
+//P: two strings, never empty, name and position
+//R: if owner == name return 'Hello boss' else "Hello guest"
+//E: 'Dan', 'Dan' => 'Hello boss'
+//E: 'Greg', 'Dan' => 'Hello guest'
+//P: use a conditional to see if name and owner are the same if so return hello boss, else hello guest
+
+
+function greet (name, owner) {
+  return name == owner ? 'Hello boss' : 'Hello guest'
+}
+
   //My Solution
   function greet (name, owner) {
     if (name === owner){
