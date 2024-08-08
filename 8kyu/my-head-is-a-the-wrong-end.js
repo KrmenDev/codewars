@@ -9,21 +9,17 @@
 
 //My Solution
 
-
 //P: Array with strings, always 3 values, never empty
-//R: Array or ordered elements
+//R: Array of ordered elements
 //E:
 /// ["tail", "body", "head"] => ["head", "body", "tail"]
 /// ["bottom", "middle", "top"] => ["top", "middle", "bottom"]
 /// ["ground", "rainbow", "sky"] => ["sky", "rainbow", "ground"]
-//P: 
+//P: reverse the array and return
 
 function fixTheMeerkat(arr) {
-    return arr.reverse()
-   }
-
- 
-
+  return arr.reverse()
+ }
 
 //CodeWars
 const fixTheMeerkat = ([tail, body, head]) => [head, body, tail]
