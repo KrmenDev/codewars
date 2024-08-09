@@ -14,8 +14,13 @@
 //E: [22, -6, 32, 82, 9, 25] =>  [-6, 32, 25]
 //E: [68, -1, 1, -7, 10, 10] => [-1, 10]
 //E: [0,2,3,6,9] => [0,2,6]
-//P: Loop each num and if the num is multiply of its index put in new array
+//P: Loop each num in the array (map)and if the num is multiple of its index put in new array
 //P: Return new array
+
+function multipleOfIndex(array) {
+  return array.filter((e, i) => e % 1 === 0 || e === 0 && i === 0)
+}
+
 
 function multipleOfIndex(array) {
     return array.filter((num, indx) => num % indx === 0 || num == 0)
