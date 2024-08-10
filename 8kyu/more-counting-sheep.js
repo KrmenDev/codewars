@@ -13,9 +13,17 @@
 
 // Hint: Don't forget to check for bad values like null/undefined
 
+
+//P: array of strings, can be null or undefined
+//R: number of sheep (true)
+//E: [undefined] => 0
+//E: [null] => 0
+//E: [null, false, false, null, true, false] => 1
+//P: filter arr if true add it and return length
 function countSheeps(arrayOfSheep) {
-    // TODO May the force be with you
+    return arrayOfSheep.filter((e) => e === true).length 
   }
+
 
   //My Solution
   function countSheeps(arrayOfSheep) {
