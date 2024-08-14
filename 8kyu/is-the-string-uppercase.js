@@ -22,5 +22,18 @@
 
 
 String.prototype.isUpperCase = function() {
+  return this == this.toUpperCase(Boolean)
+}
+
+String.prototype.isUpperCase = function() {
     return this == this.toUpperCase() ? true : false
   }
+
+
+//codewars
+String.prototype.isUpperCase=function() {return this==this.toUpperCase()}
+
+//codewars
+String.prototype.isUpperCase = function() {
+  return this.toUpperCase() === this.toString();
+}
