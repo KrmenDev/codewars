@@ -9,9 +9,17 @@
 // Note:
 // Your points are not included in the array of your class's points. For calculating the average point you may add your point to the given array!
 
+
+//P: numbers, positives, never empty
+//R: True if youPoints is higher than class Points
+//E:[2, 3], 5 => True
+//E: [12, 23, 34, 45, 56, 67, 78, 89, 90], 9 => false
+//P: add all class points and divide by its length, if the result is higher than yourPoints return false else true
+
 function betterThanAverage(classPoints, yourPoints) {
-    // Your code here
+    return classPoints.reduce((acc,c) => (acc + c)) /classPoints.length < yourPoints ? true : false
   }
+
 
   //My Solution
   function betterThanAverage(classPoints, yourPoints) {
@@ -23,4 +31,15 @@ function betterThanAverage(classPoints, yourPoints) {
 //CodeWars Best
 function betterThanAverage(classPoints, yourPoints) {
   return yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length; 
+}
+
+
+//Codewars
+function betterThanAverage(classPoints, yourPoints) {
+  var classAvg = 0;
+  for (var i = 0; i < classPoints.length; i++){
+    classAvg += classPoints[i]; 
+  }
+  classAvg = classAvg/classPoints.length; 
+  return yourPoints > classAvg;
 }
