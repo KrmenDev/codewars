@@ -28,6 +28,14 @@
 //P: An array with all 6 possible phrases
 // return index of the array petals
 
+function howMuchILoveYou(nbPetals) {
+    let petals = ["I love you", "a little",  "a lot", "passionately",  "madly",  "not at all"]
+
+    return petals[(nbPetals-1) % 6]
+}
+
+
+
 
 function howMuchILoveYou(nbPetals) {
     let petals = ["I love you", "a little",  "a lot", "passionately",  "madly",  "not at all"]
@@ -57,3 +65,21 @@ function howMuchILoveYou(petals){
     while(petals > 6) petals -= 6
     return arr[petals - 1]
   }
+
+  //Codewars
+  function howMuchILoveYou(nbPetals) {
+    switch ((nbPetals - 1) % 6) {
+        case 1:
+            return "a little";
+        case 2:
+            return "a lot";
+        case 3:
+            return "passionately";
+        case 4:
+            return "madly";
+        case 5:
+            return "not at all";
+        default:
+            return "I love you";
+    }
+}
