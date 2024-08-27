@@ -30,9 +30,10 @@
 //P: if R ascending order else descending
 
 
-const flip=(d, a)=>{
-    return d === 'R' ? a.sort((a,b)=> a - b) : a.sort((a,b)=> b - a)
-  }
+
+const flip = (d, a)=> {
+  return d === 'R' ? a.sort((a,b) => a - b) : a.sort((a,b) => b - a) 
+}
 
 
 
@@ -47,3 +48,9 @@ const flip3=(d, a)=>{
     if(d === 'R') return a.sort((a,b)=>a-b);
     if(d === 'L') return a.sort((a,b)=>b-a);
   }
+
+
+  
+//Codewars
+  const flip4 = (d, a) =>
+    a.sort((a, b) => d === `R` ? a - b : b - a);
