@@ -23,6 +23,30 @@
 //   [1,2,5,7], 4
 //P: add all numbers in array then divide them by the number of elements in array
 
+
 var findAverage = function (nums) {
-    return nums.reduce((acc, cv) => acc + cv, 0) / nums.length;
+  return nums.reduce((acc,c) => acc + c )/ nums.length
+}
+
+
+
+//Codewars
+var findAverage = function (nums) {
+  // Code here
+  var sum = 0;
+  for (num in nums) {
+    sum += nums[num];
   }
+  return sum / (nums.length);
+}
+
+
+
+//Codewars
+var findAverage = function (nums) {
+  let res = nums.length;
+  let plus = nums.reduce((acc,el)=> {
+    return acc+el
+  })
+  return plus / Math.floor(res)
+}
