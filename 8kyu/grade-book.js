@@ -11,7 +11,21 @@
 // Tested values are all between 0 and 100. Theres is no need to check for negative values or values greater than 100.
 
 
-//My Solution
+//P: numbers, always positive, never empty
+//R: Return string 'A' to ''F' of average
+//E: 95,90,93 => 'A'
+//E: 70, 70, 100 =>'B'
+//E: 44, 55, 52 => 'F'
+//P: summ all nums and divide by 3
+//P: Use a conditional if > 100 => 'A'
+
+function getGrade (s1, s2, s3) {
+    let averageNum = (s1 + s2 + s3) / 3
+    return averageNum < 60 ? 'F' : averageNum < 70 ? 'D' : averageNum < 80 ? 'C' : averageNum < 90 ? 'B' : 'A'
+  }
+
+
+
 function getGrade (s1, s2, s3) {
     let array = [s1, s2, s3]
     let average = array.length === 0 ? 0 : array.reduce((acc,c) => acc + c, 0)/array.length
