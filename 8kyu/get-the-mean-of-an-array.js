@@ -15,12 +15,11 @@
 /// [1,2,3,4,5] => 3
 /// [1,1,1,1,1,1,1,2] => 1
 //P: sum the num in array (reduce) divided by its length 
-// return round down num (Math.floor)
+// return round down num
 
 function getAverage(marks){
-    return Math.floor(marks.reduce((acc,c) => acc + c, 0)/marks.length)
-  }
-
+  return Math.floor(marks.reduce((acc, c) => acc + c, 0)/marks.length)
+}
 
 
 
