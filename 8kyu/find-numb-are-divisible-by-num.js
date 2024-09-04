@@ -6,7 +6,7 @@
 // [1, 2, 3, 4, 5, 6], 2 --> [2, 4, 6]
 
 //P: alway num, never empty, whole
-//R: attay of nums that are divisible by 2 argument
+//R: array of nums that are divisible by 2 argument
 //E:
 // [1,2,3,4,5,6],3 => [3,6]
 // [0,1,2,3,4,5,6], 4 => [0,4]
@@ -18,9 +18,8 @@
 
 
 function divisibleBy(numbers, divisor){
-    return numbers.filter((num)=> num % divisor === 0)
+    return numbers.filter((num) => num % divisor === 0) 
 }
-
 
 
 //CodeWars
@@ -37,3 +36,15 @@ return newArr;
 
 //CodeWars
 const divisibleBy = (numbers, divisor) => numbers.filter(number => !(number % divisor));
+
+
+
+//CodeWars
+function divisibleBy(numbers, divisor){
+	let answer = []
+	 numbers.map(x => {
+	 if(x % divisor === 0){
+	   answer.push(x)}
+	 } )
+	 return answer
+	}
