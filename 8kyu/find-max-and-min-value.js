@@ -10,16 +10,15 @@
 // You may consider that there will not be any empty arrays/vectors.
 var min = function(list){
     
-    return list[0];
+    return Math.min(...list);
 }
 
 var max = function(list){
     
-    return list[0];
+    return Math.max(...list);
 }
 
 
-//My Solution
 var min = function(list){
     list.sort(function(a,b){return a-b})
     return list[0];
@@ -31,6 +30,26 @@ var max = function(list){
 }
 
 
-//CodeWars Best
+//CodeWars 
 const min = (list) => Math.min(...list);
 const max = (list) => Math.max(...list);
+
+
+//Codewars
+var min = function(list){
+    var min =list[0];
+    for(var i=0; i<list.length; i++){
+       var cur = list[i];
+       if (cur<min) min=cur;
+    }
+    return min;
+}
+
+var max = function(list){
+    var max =list[0];
+    for(var i=0; i<list.length; i++){
+       var cur = list[i];
+       if (cur>max) max=cur;
+    }
+    return max;
+}
