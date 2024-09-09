@@ -28,6 +28,17 @@
 // eliminate duplicates
 //return array
 
+
+
+function gooseFilter (birds) {
+    let geese =  ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
+
+    return birds.filter((bird)=> geese.indexOf(bird) === -1)
+    }
+
+
+
+
 function gooseFilter (birds) {
     var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
     let result = []
@@ -39,10 +50,6 @@ function gooseFilter (birds) {
     return result
     }
 
-//   function gooseFilter (birds) {
-//     var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
-//     return birds.filter((bird) => !geese.includes(bird))
-//   };
 
 
 
