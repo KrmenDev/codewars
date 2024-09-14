@@ -8,7 +8,19 @@
 
 //the dish must start and end with the same letters as the animal's name
 
-//My Solution
+//P: two strings always lower case each more than two letters, never empty
+//R: boolean 
+//E: 'chikadee', 'chocolate cake' => true
+//E: 'brown bear', 'bear claw' => false
+//P: check each word and compare the first and last
+//P: grab first and last letter of beast and first and last of dish compare and return boolean
+
+
+function feast(beast, dish) {
+    return beast.charAt(0) === dish.charAt(0) && beast.charAt(beast.length - 1) === dish.charAt(dish.length - 1) ? true : false
+}
+
+
     function feast(beast, dish) {
         let beastLastLetter = beast.slice(-1)
         let dishLastLetter = dish.slice(-1)
