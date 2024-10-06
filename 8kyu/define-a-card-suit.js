@@ -41,6 +41,7 @@ function defineSuit(card) {
 }
 
 
+
 //Codewars
 function defineSuit(card) {
   return {
