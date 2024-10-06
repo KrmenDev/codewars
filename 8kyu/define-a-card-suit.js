@@ -51,3 +51,4 @@ function defineSuit(card) {
     '♠' : 'spades'
   }[card.substr(-1)]
 }
+
